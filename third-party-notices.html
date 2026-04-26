@@ -19,17 +19,31 @@
     </header>
 
     <main>
-      <p>ZFiles uses open source software. The following list may be updated as dependencies change.</p>
+      <p>ZFiles uses open source software for SMB, SFTP, archive handling, networking, cryptography, logging, and related app functionality.</p>
 
-      <h2>Direct Dependencies</h2>
+      <h2>License Summary</h2>
       <ul>
-        <li><a href="https://github.com/amosavian/AMSMB2">AMSMB2</a></li>
-        <li><a href="https://github.com/orlandos-nl/Citadel">Citadel</a></li>
-        <li><a href="https://github.com/weichsel/ZIPFoundation">ZIPFoundation</a></li>
+        <li><a href="https://github.com/amosavian/AMSMB2">AMSMB2</a> 4.0.3, including <a href="https://github.com/sahlberg/libsmb2">libsmb2</a>, is provided under the GNU Lesser General Public License version 2.1 or later because AMSMB2 links libsmb2.</li>
+        <li><a href="https://github.com/orlandos-nl/Citadel">Citadel</a> is provided under the MIT License.</li>
+        <li><a href="https://github.com/weichsel/ZIPFoundation">ZIPFoundation</a> is provided under the MIT License.</li>
+        <li><a href="https://github.com/attaswift/BigInt">BigInt</a> is provided under the MIT License.</li>
+        <li>Apple Swift packages used by ZFiles, including swift-asn1, swift-atomics, swift-collections, swift-crypto, swift-log, swift-nio, swift-nio-ssh, and swift-system, are provided under Apache License 2.0 or compatible project licenses as published in their repositories.</li>
       </ul>
 
-      <h2>Transitive Dependencies</h2>
+      <h2>LGPL Notice for AMSMB2 and libsmb2</h2>
+      <p>ZFiles uses AMSMB2 as an embedded dynamic framework for SMB support. AMSMB2 includes and links libsmb2, which is licensed under the GNU Lesser General Public License version 2.1 or later. The LGPL allows use in commercial apps, provided its terms are respected.</p>
+      <p>No local source changes to AMSMB2 or libsmb2 are applied in this ZFiles release. The exact AMSMB2 version used by the app is recorded in the app repository's Swift Package resolution file.</p>
       <ul>
+        <li>AMSMB2 source: <a href="https://github.com/amosavian/AMSMB2/tree/1726aaaf7adf63d7d1d2a0c5d1b0e635028215c0">revision 1726aaaf7adf63d7d1d2a0c5d1b0e635028215c0</a></li>
+        <li>libsmb2 source: <a href="https://github.com/sahlberg/libsmb2/tree/aff9fa6ba9f41cfd3c15d184554601ec3f6d8d03">revision aff9fa6ba9f41cfd3c15d184554601ec3f6d8d03</a></li>
+        <li>LGPL 2.1 license text: <a href="licenses/LGPL-2.1.txt">licenses/LGPL-2.1.txt</a></li>
+      </ul>
+      <p>If you need source materials for LGPL compliance and the links above are unavailable, contact <a href="mailto:morris.lau.dev@gmail.com">morris.lau.dev@gmail.com</a>.</p>
+
+      <h2>Additional Source Links</h2>
+      <ul>
+        <li><a href="https://github.com/orlandos-nl/Citadel">Citadel</a></li>
+        <li><a href="https://github.com/weichsel/ZIPFoundation">ZIPFoundation</a></li>
         <li><a href="https://github.com/attaswift/BigInt">BigInt</a></li>
         <li><a href="https://github.com/apple/swift-asn1">swift-asn1</a></li>
         <li><a href="https://github.com/apple/swift-atomics">swift-atomics</a></li>
@@ -41,11 +55,9 @@
         <li><a href="https://github.com/apple/swift-system">swift-system</a></li>
       </ul>
 
-      <p>License terms are available from each project repository.</p>
-
       <div class="lang" lang="zh-Hans">
         <h2>第三方开源软件</h2>
-        <p>ZFiles 使用了一些开源软件包。对应许可证可在各项目仓库中查看。</p>
+        <p>ZFiles 使用开源软件提供 SMB、SFTP、压缩包、网络、加密和日志等功能。AMSMB2 及其包含的 libsmb2 使用 LGPL 2.1 或更新版本；ZFiles 当前版本未对 AMSMB2 或 libsmb2 应用本地源码修改。相关源码和许可证链接见本页上方。</p>
       </div>
     </main>
 
