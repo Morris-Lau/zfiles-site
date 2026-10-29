@@ -26,6 +26,7 @@
         <li><a href="https://github.com/amosavian/AMSMB2">AMSMB2</a> 4.0.3, including <a href="https://github.com/sahlberg/libsmb2">libsmb2</a>, is provided under the GNU Lesser General Public License version 2.1 or later because AMSMB2 links libsmb2.</li>
         <li><a href="https://github.com/orlandos-nl/Citadel">Citadel</a> is provided under the MIT License.</li>
         <li><a href="https://github.com/weichsel/ZIPFoundation">ZIPFoundation</a> is provided under the MIT License.</li>
+        <li><a href="https://github.com/superuser404notfound/AetherEngine">AetherEngine</a> 7.51.0 is provided under LGPL 3.0 with the author's Apple Store / DRM exception. Its FFmpegBuild components are provided under LGPL 2.1 or later; dav1d, zimg, libzvbi and LibDovi retain their respective licenses.</li>
         <li><a href="https://github.com/attaswift/BigInt">BigInt</a> is provided under the MIT License.</li>
         <li>Apple Swift packages used by ZFiles, including swift-asn1, swift-atomics, swift-collections, swift-crypto, swift-log, swift-nio, swift-nio-ssh, and swift-system, are provided under Apache License 2.0 or compatible project licenses as published in their repositories.</li>
       </ul>
@@ -39,6 +40,16 @@
         <li>LGPL 2.1 license text: <a href="licenses/LGPL-2.1.txt">licenses/LGPL-2.1.txt</a></li>
       </ul>
       <p>If you need source materials for LGPL compliance and the links above are unavailable, contact <a href="mailto:morris.lau.dev@gmail.com">morris.lau.dev@gmail.com</a>.</p>
+
+      <h2>AetherEngine and FFmpeg Notice</h2>
+      <p>ZFiles uses AetherEngine for MKV playback. AetherEngine is statically linked under LGPL 3.0 with the author's explicit Apple Store / DRM exception. No local source changes are applied. FFmpegBuild's Aether-prefixed libraries are embedded as dynamic frameworks under LGPL 2.1 or later.</p>
+      <ul>
+        <li>AetherEngine source: <a href="https://github.com/superuser404notfound/AetherEngine/tree/a877941bd3402d5f531edad0cbe4c9b33eefa856">revision a877941bd3402d5f531edad0cbe4c9b33eefa856</a></li>
+        <li>AetherEngine license and App Store exception: <a href="licenses/AetherEngine-LICENSE.txt">licenses/AetherEngine-LICENSE.txt</a></li>
+        <li>FFmpegBuild source: <a href="https://github.com/superuser404notfound/FFmpegBuild/tree/b6b7b386c9d8c67e40d59fdcfde453cfed41effb">revision b6b7b386c9d8c67e40d59fdcfde453cfed41effb</a></li>
+        <li>FFmpeg / LGPL 2.1 license text: <a href="licenses/LGPL-2.1.txt">licenses/LGPL-2.1.txt</a></li>
+        <li>LibDovi notice: <a href="licenses/LibDovi-MIT.txt">licenses/LibDovi-MIT.txt</a>; dav1d: <a href="licenses/dav1d.BSD-2-Clause.txt">BSD-2-Clause</a>; zimg: <a href="licenses/zimg.WTFPL.txt">WTFPL</a>; libzvbi: <a href="licenses/libzvbi-ure.MIT.txt">MIT</a></li>
+      </ul>
 
       <h2>Additional Source Links</h2>
       <ul>
@@ -57,7 +68,7 @@
 
       <div class="lang" lang="zh-Hans">
         <h2>第三方开源软件</h2>
-        <p>ZFiles 使用开源软件提供 SMB、SFTP、压缩包、网络、加密和日志等功能。AMSMB2 及其包含的 libsmb2 使用 LGPL 2.1 或更新版本；ZFiles 当前版本未对 AMSMB2 或 libsmb2 应用本地源码修改。相关源码和许可证链接见本页上方。</p>
+        <p>ZFiles 使用开源软件提供 SMB、SFTP、压缩包、网络、加密、日志和 MKV 播放等功能。AMSMB2 及其包含的 libsmb2 使用 LGPL 2.1 或更新版本；AetherEngine 使用附带 App Store / DRM 例外的 LGPL 3.0，FFmpegBuild 组件使用 LGPL 2.1 或更新版本。ZFiles 当前版本未对这些上游项目应用本地源码修改。相关源码和许可证链接见本页上方。</p>
       </div>
     </main>
 
